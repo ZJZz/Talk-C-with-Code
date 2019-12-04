@@ -2,6 +2,8 @@
 
 [CSAPP - 链接](https://wdxtub.com/csapp/thin-csapp-4/2016/04/16/)
 
+http://yaoyao.codes/c++/2015/03/18/cpp-auto-register-static-const-volatile-linkage-scope
+
 ## 修饰对象
 
 static local object，调用时才创建，生命在作用域结束之后仍然存在，直到程序结束，即调用析构函数
@@ -17,7 +19,7 @@ global object在整个程序结束后才结束
 
 ## 修饰成员变量
 
-在class外做定义，??才申请内存
+在class外做定义，才申请内存
 
 ## 修饰成员函数
 

@@ -34,3 +34,5 @@ operator delete(ps); // 调用free，释放内存
 ## new []
 
 ## delete []
+
+会根据new的长度，来多次调用析构函数
