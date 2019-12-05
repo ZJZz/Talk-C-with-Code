@@ -55,7 +55,31 @@ String& String::operator=(const String& str)
 }
 ```
 
-## 类型转换构造函数 
+## 转换函数
+
+当前类型转换为其它类型
+
+```cpp
+class Fraction
+{
+public:
+    Fraction(int num, int den = 1):m_numerator(num), m_denominator(den) {}
+    operator double() const 
+    { 
+        return (double)m_numerator/ m_denominator;
+    }
+private:
+    int m_numerator;   // 分子
+    int m_denominator; // 分母
+};
+
+Fraction f(3,5);
+double d = 4 + f; // 调用operator double()将f转换为0.6, 注意这里写成 4+f和f+4的区别
+```
+
+## 类型转换构造函数  
+
+别的类型转为当前类
 
 `explicit`
 
